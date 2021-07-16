@@ -21,20 +21,29 @@
 <body>
 
 <header class="header">
-<nav class="flex flex-jc-sb">
+<nav class="flex flex-jc-sb flex-ai-c">
   <a href="/" class="header__logo">
     <img src="images/logo.svg" alt="Easybank">
     </a>
 
-    <a href="#" class="header__menu">
+    <a href="#" class="header__menu hide-for-desktop">
       <span></span>
       <span></span>
       <span></span>
     </a>
+
+    <div class="header__links hide-for-mobile">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Career</a>
+    </div>
+<a href="#" class="button header__cta hide-for-mobile">Request Invite</a>
 </nav>
 </header>
 
-  Home
+ <!--Home
   About
   Contact
   Blog
@@ -96,7 +105,7 @@
   By Claire Robinson
   Our invite-only Beta accounts are now live!
   After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-  It’s easy to request an invite through the site ...
+  It’s easy to request an invite through the site 
 
   
 
@@ -110,7 +119,7 @@
   Request Invite
 
   © Easybank. All Rights Reserved
-  
+  ...--> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

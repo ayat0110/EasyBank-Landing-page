@@ -1,5 +1,9 @@
 .header{
 
+ 
+    nav{
+        padding: 24px;
+    }
 
     &__logo{
         img{
@@ -15,6 +19,24 @@
             width: 26px;
             height: 2px;
             background-color: $darkBlue;
+
+        &:not(:last-child){
+            margin-bottom: 3px;
         }
+
+       }
+    }
+        &__links{
+            a{
+                font-size:$font-sm ;
+                color: $grayishBlue;
+            }
+            
+        }
+
+    
+    &__cta{
+        font-size: $font-sm;
+        color: $white;
     }
 }
