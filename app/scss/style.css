@@ -48,7 +48,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 2.1875rem;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border: 0;
@@ -58,7 +58,7 @@ button, .button {
   font-weight: 400;
 }
 
-@media (min-width: 63.9375em) {
+@media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
   }
@@ -71,7 +71,12 @@ button, .button {
 }
 
 .header nav {
-  padding: 24px;
+  padding: 1.0625rem 1.5rem;
+}
+
+.header__logo img {
+  width: 8.8125rem;
+  height: 1.375rem;
 }
 
 .header__menu > span {
@@ -86,12 +91,48 @@ button, .button {
 }
 
 .header__links a {
+  position: relative;
   font-size: 0.875rem;
   color: #9698a6;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__links a:hover {
+  color: #2d314d;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
 }
 
 .header__cta {
   font-size: 0.875rem;
   color: white;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__cta:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=style.css.map */
