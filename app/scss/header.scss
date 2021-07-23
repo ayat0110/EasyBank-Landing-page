@@ -2,6 +2,10 @@
 
     // Hamburger open styles
 &.open{
+     
+.overlay{
+    display: block;
+}
 
     .header__menu{
         > span:first-child{
@@ -22,6 +26,7 @@
 }
 
     .overlay{
+        display: none;
         position: fixed;
         top: 3.75rem;
         right: 0;
